@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1 id="element">salom matin</h1>
+    <h2 class="myclass">klass element</h2>
+    <div>salom</div>
+    <div class=" element">salom element</div>
+
+    <div id="inner">salom inner</div>
+    <div id="uzgar">salom bu endi klassga uzgaradi</div>
+
+    <div class="element2"></div>
+
+     <script>
+        let stil= document.querySelector(".element2");
+        stil.style.background="red";
+        stil.style.color="blue";
+        stil.style.marginTop="50px";
+        stil.style.marginLeft="50px";
+
+        stil.style.paddingTop="50px";
+     </script> -->
+
+
+
+
+
+     <div id="fon">
+        salom fon
+    </div>
+    <button>btn</button>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
+      <p> Hello World! rang red qizil</p>
+      <p>Hello Norway!</p>
+      <p>Click the  button to change the color of all p elements.</p>
+      <button onclick="myFunction()">Try it</button>
+
+
+
+      <form action="">
+        <label for="">login</label><br>
+        <input type="text" id="login"><br>
+
+        <label for="">parol</label><br>
+        <input type="password" id ="password"><br>
+        <button id ="btn">kirish//</button>
+      </form>
+
+    <script>
+        //   let button = document.querySelector('button');
+        //  let fons = document.getElementById('fon');
+
+        //button.onclick=function(){
+        //button.style.color='red';
+        // button.style.background='blue'
+        //  fons.style.background='red'
+        // //}
+
+
+//
+        //bosganda
+        //let button = document.querySelector('button');
+        //button.addEventListener("click", function () {//bosganda
+        //borganda
+        //button.addEventListener("mouseover",function() { //borganda
+        //button.addEventListener("mouseout",  function() { // sichqon ketganda chiqadi
+
+       // alert("Hello World");
+
+       // const para=document.createElement("p"); //p teg yaraldi
+       // const node = document.createTextNode("yangi matn yozildi."); //matn yozildi
+       // para.appendChild(node);
+
+        //const element=document.getElementById("div1");
+       // element.appendChild(para)
+
+      // function myFunction(){
+       // const myCollection=document.getElementsByTagName("p");
+      //  for(let i=0; i< myCollection.length; i++){
+       //     myCollection[i].style.color="red";
+       // }
+      // }
+
+      //let ul=document.createElement('ul');
+
+     // for (let i=1; i<=10; i++){
+      //  let li=document.createElement('li');
+      //  li.innerText=`Element ${i}`;
+      //  ul.appendChild(li);
+     // }
+
+     // document.body.appendChild(ul);
+
+
+     let loginIn=document.getElementById('login');
+     let passwordIn =document.getElementById('password');
+     let button=document.getElementById('btn');
+
+     //tugmani bosganda qiymatni olish
+     button.addEventListener('click',()=>{
+        let loginValue=login.value;//Login input iqymatlrini olish
+        let passwordValue=passwordIn.value;//Parol input qiymatiniolish
+
+        console.log(`Login: ${loginValue},Parol: ${passwordValue}`);//Konsolda korsatish
+        //alert (`Kiritilgan ism : ${loginvalue}`); //Popupda korsatish
+
+        if (loginValue == "Ruxshona" && passwordValue == '808321'){
+            //alert ('hush kelibsiz')
+            window.open('https://www.edclub.com/sportal/program-3/2943.play')
+        }
+        else{
+            alert ('login yoki parol xato')
+        }
+        
+     })
+    </script>
+
+</body>
+
+</html>
